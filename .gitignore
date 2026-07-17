@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Local source repositories used for project inspection
+repo/
+
+# Generated build output and caches
+dist/
+*.tsbuildinfo
+.wrangler/
+
+# Local runtime and browser-audit files
+*.log
+.audit-*/
+.chrome-*/
+audit-*.png
+contact-audit.png
+project-audit.png
+qr-*.png
+
+# Environment files
+.env
+.env.*
+!.env.example
