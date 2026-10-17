@@ -16,6 +16,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'ielts-yunlong',
+    title: 'IELTS Studio',
+    titleZh: '雅思模考',
+    category: 'Full-stack',
+    status: 'In Development',
+    description: 'A full IELTS mock-exam web app covering listening, reading, writing and speaking, with auto-grading, exam timers and review reports. Its Cambridge question bank is built through a local OCR import pipeline, and the app deploys on Cloudflare Pages + R2.',
+    descriptionZh: '覆盖听力、阅读、写作、口语的完整雅思模考网页应用：自动判题、考试计时、答题复盘与报告导出；剑桥真题库经本地 OCR 导入管线整理入库，应用部署在 Cloudflare Pages + R2。',
+    tech: ['JavaScript', 'Node.js', 'Python', 'Cloudflare Pages', 'R2'],
+    tone: 'mint',
+    cover: '/images/projects/ielts/home.png',
+    gallery: ['/images/projects/ielts/mock.png'],
+    repoUrl: 'https://github.com/XYDragon603/IELTS-YUNLONG',
+  },
+  {
     slug: 'medminder',
     title: 'MedMinder',
     titleZh: '用药管理平台',
@@ -30,7 +44,7 @@ export const projects: Project[] = [
       '/images/projects/medminder/medications.jpg',
       '/images/projects/medminder/login.jpg',
     ],
-    liveUrl: 'https://medminder.xydragon.com',
+    // liveUrl: 'https://medminder.xydragon.com', // 暂时隐藏：站点当前不可达，恢复后再启用
   },
   {
     slug: 'wedding-planning',
@@ -54,15 +68,19 @@ export const projects: Project[] = [
   {
     slug: 'fitness-miniapp',
     title: 'Air Health',
-    titleZh: 'AI 健身记录小程序',
+    titleZh: '健身计划记录小程序',
     category: 'Mobile',
     status: 'In Development',
-    description: 'A WeChat Mini Program for tracking workouts, nutrition and personal progress, with daily logs, statistics and AI-assisted suggestions.',
-    descriptionZh: '一款用于记录训练、饮食和身体变化的微信小程序，支持日常打卡、进度统计和 AI 建议。',
-    tech: ['WXML', 'WXSS', 'JavaScript', 'Cloud Functions'],
+    description: 'A WeChat Mini Program for structured strength training: a 1,324-exercise library, workout logging with progress curves, nutrition tracking, weekly reports, share cards, and cloud backup with restore.',
+    descriptionZh: '基于三分化训练计划的微信小程序：1324 个动作的动作库、训练记录与动作曲线、饮食营养记录、周报与分享卡、云备份与数据恢复。',
+    tech: ['WeChat Mini Program', 'JavaScript', 'WXML', 'WXSS', 'Cloud Backup'],
     tone: 'rose',
-    cover: '/images/projects/air-health/nutrition.jpg',
-    gallery: ['/images/projects/air-health/training-plan.jpg'],
+    cover: '/images/projects/air-health/today.jpg',
+    gallery: [
+      '/images/projects/air-health/library.jpg',
+      '/images/projects/air-health/stats.jpg',
+    ],
+    repoUrl: 'https://github.com/XYDragon603/Fitness-Miniapp',
   },
   {
     slug: 'almanac-app',
